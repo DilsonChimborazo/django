@@ -1,7 +1,7 @@
-from rest_framework.serializers import modelserializer
+from rest_framework.serializers import ModelSerializer
 from .models import Tarea
 
-class TareaSerializer(modelserializer):
+class TareaSerializer(ModelSerializer):
     class Meta:
         model = Tarea
-        fields='__all__'
+        fields = '__all__' 

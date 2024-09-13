@@ -1,8 +1,8 @@
 from .models import Tarea
 from .serializers import TareaSerializer
-from rest_framework.viewsets import modelViewSet
+from rest_framework.viewsets import ModelViewSet
 
 # Create your views here.
-class TareaViewSet(modelViewSet):
+class TareaViewSet(ModelViewSet):
     queryset = Tarea.objects.all()
-    serializers_class = TareaSerializer
+    serializer_class = TareaSerializer
